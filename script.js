@@ -1,3 +1,4 @@
+// Licensed under the MIT License
 const main = document.getElementById('content');
 const paths = document.querySelectorAll('.path');
 
