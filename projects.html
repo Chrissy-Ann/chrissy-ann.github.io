@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768" preserveAspectRatio="none">
+            <path class="path2-static" d="M.5,578.5c60.64-.73,148.53-8.03,249.16-39.37,154.33-48.06,254.59-126.47,286.18-152.43,58.74-48.27,
+                143.04-119.16,197.13-243.29,25.57-58.67,36.71-111.63,42.03-149.41" pathLength="1000"/>
+            <path class="path1-static" d="M1386,105c-147.83,52.25-253.7,121.59-319.68,172.05-87.75,67.11-205.17,156.91-269.53,316.78-29.2,
+                72.53-38.56,137.32-41.79,181.16" pathLength="1000"/>
+        </svg>
+    </div>
+
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Christina Hollands</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1>Projects</h1>
+        <div class="project-group">
+            <h2 class="project-title">Idea Forum</h2>
+                <div class="image-container">
+                    <img src="images/screenshots/idea-forum.png" class="image image-1"/>
+                    <img src="images/screenshots/idea-forum-2.png" class="image image-2" />
+                </div>
+            <h3 class="project-subheading">About the Project</h3>
+            <h4><strong>Languages and Frameworks:</strong> PHP, Laravel, Laravel Livewire</h4>
+            <p>
+                This project involved using PHP, the Laravel framework, and Laravel Livewire. We were tasked with
+                creating a web application from the ground up, including both the design and the functionality. The application
+                needed to be connected to a database, and be able to perform all CRUD operations (create, read, update, delete.)
+                I was part of a group of 3, and this was the first time I was part of a group for a programming project. Though there
+                are some drawbacks to working in a group -- making decisions requires a group discussion, taking longer -- it was
+                ultimately very beneficial to the project. We each had our own strengths, and we brought different ideas to the table.
+                I felt the most comfortabe with design, so I took the lead on that aspect, creating a Figma board with different options
+                for components and page layouts, as well as colours and fonts. Laravel Livewire uses Flux components, and I struggled a bit
+                with that as we hadn't learned it in class, but one of my team members had no trouble. It was great having teammates whose
+                strengths complemented each other. We created an idea forum, much like Reddit, where users could post their ideas, comment on others, and like posts. Our
+                application included user authentication, and input validation for posts and comments.
+            </p>
+            <h3 class="project-subheading">Challenges</h3>
+            <p>
+                When this project was assigned, we had just started learning about Laravel and Livewire. We were learning as we went for
+                this project, which was difficult. I had difficulty with learning Flux components, as well as all the aspects of the Livewire
+                starter kit. We did not cover these topics in class. We also had to learn how to use GitHub as a team, 
+                making pull requests and merging branches, which I had not done before. So, while there was definitely a learning curve
+                with this project, I had a really great team to help me, and I think our consistent communication is what made this project
+                a success. 
+            </p>
+            <p><a href="https://github.com/v-lane/idea-forum" target="_blank">GitHub repository for Idea Forum</a></p>
+        </div>
+
+        <div class="project-group">
+            <h2 class="project-title">Registrar</h2>
+            <div class="image-container">
+                <img src="images/screenshots/registrar-form.png" class="image image-1" />
+                <img src="images/screenshots/registrar.png" class="image image-2" />
+            </div>
+            <h3 class="project-subheading">About the Project</h3>
+            <h4><strong>Languages and Frameworks:</strong> C#, Blazor</h4>
+            <p>
+                This project used Microsoft's Blazor framework for C# to create an application that could register new students into a database,
+                list all students and their data, and register them in courses. This was the final project for a course that split the term
+                between learning C#, and learning Blazor.
+            </p>
+            <h3 class="project-subheading">Challenges</h3>
+            <p>
+                The main challenge of this project was that there were many business rules about course registration. Students were either full time,
+                part time, or part of a co-op program. Full time students could register for a maximum of 16 hours a week in courses, part time
+                students could register in up to 3 courses, and co-op students could register in up to 2 courses, and for a maximum of 4 hours a week.
+                This made validation for the registration form very difficult. I had to keep track of the number of courses selected, and their total
+                hours. I also had to ensure that if a student had already been registered in any courses, those were pre-checked when opening the form.
+                I found it challenging to handle all the rules for validation, and make sure I was including all other functionality, but what helped
+                me was breaking the project instructions down, and tackling things one at a time. 
+            </p>
+            <p><a href="https://github.com/Chrissy-Ann/registrar" target="_blank">GitHub repository for Registrar</a></p>
+        </div>
+
+        <div class="project-group">
+            <h2 class="project-title">Employee Portal</h2>
+            <div class="image-container">
+                <img src="images/screenshots/registration.png" class="image image-1" />
+                <img src="images/screenshots/employee-portal-2.png" class="image image-2" />
+            </div>
+            <h3 class="project-subheading">About the Project</h3>
+            <h4><strong>Languages and Frameworks:</strong> ASP.NET, C#</h4>
+            <p>
+                This project was completed across multiple labs, each adding more functionality. The goal was to create an application
+                using ASP.NET and MVC architecture that allowed a user to register new employees into a database, edit existing ones,
+                as well as edit grades of students. The first lab involved using Visual Studio to generate code from the database.
+                I set up a page to display a record of a student, their course, and an input field for their grade to allow users to edit.
+                The second lab focused on view models, a class designed for a specific view with a form that involves multiple entities. 
+                In this project, the employee registration form involved both the employee model, which contained employee name, id and password,
+                and the role model which contained the different job titles an employee could have. Having a view model for this page
+                made validation much easier, because all the rules and the error messages could be implemented in that one file.
+                The final lab was about validation, adding validation to all forms using ASP.NET data annotations for model validation,
+                as well as changing form lables and table headings to be more descriptive and user-friendly.
+            </p>
+            <h3 class="project-subheading">Challenges</h3>
+            <p>
+                It was hard at first to follow the MVC architecture. I had to figure out which file different aspects of the code should be in,
+                unlike Razor Pages, which we had been learning previously, that has a file for the presentation layer and one for the code behind.
+            </p>
+            <p><a href="https://github.com/Chrissy-Ann/employee-portal" target="_blank">GitHub repository for Employee Portal</a></p>
+        </div>
+
+        <div class="project-group">
+            <h2 class="project-title">Invoice Manager</h2>
+            <div class="image-container">
+                <img src="images/screenshots/invoice-manager.png" class="image"/>
+            </div>
+            <h3 class="project-subheading">About the Project</h3>
+            <h4><strong>Languages and Frameworks:</strong> PHP</h4>
+            <p>
+                This was my first project using PHP. Each week, one stage of the project would be due, and the next week, we would
+                expand, adding new features or refactoring how the code was set up. The task was to create a table of invoices,
+                displaying multiple fields such as client name, amount owed, and whether the invoice was paid, pending or a draft. We started
+                out using a harcoded data array to pull the information from, and different pages for each possible status of an invoice
+                that displayed a sorted list. As we progressed through the project, it was cut down to one page and the sorting was controlled by
+                the query string, and a database was created to store the data. Multiple aspects of this project utilized major PHP
+                superglobal variables, which made me much more comfortable with their function. I also learned about PHP components,
+                and how they are very useful for code that is reused, without rewriting it. By the end of the project, a user could
+                create a new entry for an invoice, and edit and delete an existing one.
+            </p>
+            <h3 class="project-subheading">Challenges</h3>
+            <p>
+                Since this was my first PHP project, there was a bit of a learning curve in the beginning. I had to get used to the syntax,
+                specifically for loops and conditional statements. It took me awhile to remember to close each one by adding an endif; or
+                endforeach; for example.
+            </p>
+            <p><a href="https://github.com/Chrissy-Ann/invoice-manager" target="_blank">GitHub repository for Invoice Manager</a></p>
+        </div>
+
+        <div class="project-group">
+            <h2 class="project-title">Landing Page</h2>
+            <div class="image-container">
+                <img src="images/screenshots/landing-page.png" class="image" />
+            </div>
+            <h3 class="project-subheading">About the Project</h3>
+            <h4><strong>Languages and Frameworks:</strong> CSS, HTML</h4>
+            <p>
+                This project used CSS and HTML to create a company landing page. The layout had to match given images for multiple
+                screen sizes, computer, tablet and mobile. The project helped me learn different CSS attributes, as well as how to tweak the
+                code to better match the image.
+            </p>
+            <h3 class="project-subheading">Challenges</h3>
+            <p>
+                I had a bit of trouble with the background image for this site. I had figure out how to position it in a way that would match
+                where it should be for each screen size. I solved this by positioning the image inside a div for the smaller screen sizes,
+                instead of within the body, like I did for the desktop screen. The tablet and mobile versions had the image in a different spot.
+            </p>
+            <p><a href="https://github.com/Chrissy-Ann/landing-page" target="_blank">GitHub repository for Landing Page</a></p>
+        </div>
+
+        <div class="project-group">
+            <h2 class="project-title">Morse Code</h2>
+            <div class="image-container">
+                <img src="images/screenshots/morse-2.png" class="image" />
+            </div>
+            <h3 class="project-subheading">About the Project</h3>
+            <h4><strong>Languages and Frameworks:</strong> Python</h4>
+            <p>
+                For a Python lab, I was tasked with creating a script that translated user text input to morse code. I created a dictionary
+                containing the corresponding dots and dashes for each letter in the alphabet. I created functions to convert the input
+                to lower case, then to morse code. Using a connected Circuit Playground circuit board with LEDs, the morse code message would then
+                be flashed using the LEDs.
+            </p>
+            <h3 class="project-subheading">Challenges</h3>
+            <p>
+                While I ultimately had a lot of fun with this project, there were multiple challenges. Firstly, I had to determine how to use
+                the circuit board. I was provided with example functions of how to use the LEDs, as well as the function that dictates the
+                amount of time the lights stay on or off. The examples really helped me understand how these functions worked.
+                The main difficulty of this project was figuring out how to set up the morse code for the circuit board. There was a different
+                set time for between dots and dashes of one letter, between two letters, and between words, 
+                so I had to structure it in such a way that I could implement this. I ended up using nested lists, one for each word, and those
+                would be contained in a list for the entire sentence.
+            </p>
+            <p><a href="https://github.com/Chrissy-Ann/morse-code" target="_blank">GitHub repository for Morse Code</a></p>
+        </div>
+
+        <div class="project-group">
+            <h2 class="project-title">Mad Libs</h2>
+            <div class="image-container">
+                <img src="images/screenshots/mad-libs.png" class="image image-1" />
+                <img src="images/screenshots/mad-libs-2.png" class="image image-2" />
+            </div>
+            <h3 class="project-subheading">About the Project</h3>
+            <h4><strong>Languages and Frameworks:</strong> Javascript, HTML</h4>
+            <p>
+                Mad Libs involved working with forms and event handling. The user selects one of two story options, and then is presented
+                with a form to fill in the missing words of the story. Once the form is submitted, a dialog box appears containing
+                the completed story. This was done by using string interpolation in the story template with the values submitted by the
+                user.
+            </p>
+            <h3 class="project-subheading">Challenges</h3>
+            <p>
+                This was my first time using dialog boxes, and handling their events with Javascript. I needed to create multiple event
+                listeners, for the story selection, form submission for each story option, and to close the dialog box. I had some
+                trouble ensuring only the correct from showed when selected, and neither showing if nothing was selected. I used the 
+                bootstrap class "d-none," adding and removing it from the classList of either form, ensuring they were visible when selected
+                and hidden when not, and also that they would disappear when closing the dialog box.
+            </p>
+            <p><a href="https://github.com/Chrissy-Ann/mad-libs" target="_blank">GitHub repository for Mad Libs</a></p>
+        </div>
+    </main>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-dark">
+            <p class="col-md-4 mb-0 text-body-secondary footer-text">
+                This work is licensed under a 
+                <a class="text-body-secondary link-offset-2" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">
+                    Creative Commons BY-NC-SA 4.0 License
+                </a>
+            </p>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary footer-text link-offset-2" href="https://www.linkedin.com/in/christina-hollands/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary footer-text link-offset-2" href="https://github.com/Chrissy-Ann" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
