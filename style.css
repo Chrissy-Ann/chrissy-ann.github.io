@@ -157,23 +157,45 @@ h4 {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 600px) {
-  .photo {
+.footer-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@media (max-width: 670px) {
+  .image {
     width: 80%;
   }
 
-  .photo-1 {
+  .image-1 {
     top: 5%;
     left: 10%;
   }
 
-  .photo-2 {
+  .image-2 {
     top: 40%;
     left: 20%;
   }
+
+  main {
+    margin: 8vh 10vh;
+  }
+
+  .image-container {
+    margin-bottom: 40px;
+  }
+
+  .background-svg {
+    visibility: hidden;
+  }
 }
 
-.footer-text {
-    font-size: 1.3rem;
-    font-weight: 700;
+@media (min-width: 670px) and (max-width: 1080px) {
+  main {
+    margin: 8vh 10vh;
+  }
+
+  .background-svg {
+    visibility: hidden;
+  }
 }
