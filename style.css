@@ -48,12 +48,12 @@ body {
 }
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 main {
@@ -65,12 +65,12 @@ main {
 
 .content {
     opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .content.visible {
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 .navbar {
@@ -123,39 +123,39 @@ h4 {
 }
 
 .image-container:has(.image:only-child) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
-  position: absolute;
-  width: 80%;
-  transition: transform 0.4s ease, z-index 0.1s, box-shadow 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+    position: absolute;
+    width: 80%;
+    transition: transform 0.4s ease, z-index 0.1s, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .image-1 {
-  top: 10%;
-  left: 5%;
-  transform: rotate(-8deg);
-  z-index: 1;
+    top: 10%;
+    left: 5%;
+    transform: rotate(-8deg);
+    z-index: 1;
 
 }
 
 .image-2 {
-  top: 30%;
-  left: 25%;
-  transform: rotate(6deg);
-  z-index: 2;
+    top: 30%;
+    left: 25%;
+    transform: rotate(6deg);
+    z-index: 2;
 }
 
 .image:hover, .image:active {
-  transform: rotate(0deg) scale(2);
-  transform-origin: center center;
-  z-index: 10;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    transform: rotate(0deg) scale(2);
+    transform-origin: center center;
+    z-index: 10;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .footer-text {
@@ -164,55 +164,60 @@ h4 {
 }
 
 @media (max-width: 670px) {
-  .image {
-    width: 80%;
-  }
+    .image {
+        width: 80%;
+    }
 
-  .image-1 {
-    top: 5%;
-    left: 10%;
-  }
+    .image-1 {
+        top: 5%;
+        left: 10%;
+    }
 
-  .image-2 {
-    top: 40%;
-    left: 20%;
-  }
+    .image-2 {
+        top: 40%;
+        left: 20%;
+    }
 
-  main {
-    margin: 4vh 4vh;
-    padding: 3vh;
-  }
+    main {
+        margin: 4vh 4vh;
+        padding: 3vh;
+        visibility: visible;
+    }
 
-  .image-container {
-    margin-bottom: 40px;
-  }
+    .image-container {
+        margin-bottom: 40px;
+    }
 
-  .background-svg {
-    visibility: hidden;
-  }
+    .background-svg {
+        visibility: hidden;
+    }
 
-  .image:hover, .image:active {
-    transform: rotate(0deg) scale(1.5);
-  }
+    .image:hover, .image:active {
+        transform: rotate(0deg) scale(1.5);
+    }
 
-  h1 {
-    margin-bottom: 15px;
-    font-size: 3.5rem;
-  }
+    h1 {
+        margin-bottom: 15px;
+        font-size: 3.5rem;
+    }
+
+    .content {
+        transition-property: none;
+    }
 }
 
 @media (min-width: 670px) and (max-width: 1080px) {
-  main {
-    margin: 6vh 8vh;
-    padding: 4vh;
-  }
+    main {
+        margin: 6vh 8vh;
+        padding: 4vh;
+    }
 
-  .background-svg {
-    visibility: hidden;
-  }
+    .background-svg {
+        visibility: hidden;
+    }
 
-  h1 {
-    margin-bottom: 15px;
-    font-size: 3.7rem;
-  }
+    h1 {
+        margin-bottom: 15px;
+        font-size: 3.7rem;
+    }
 }
