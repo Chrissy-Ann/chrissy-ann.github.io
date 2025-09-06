@@ -179,7 +179,8 @@ h4 {
   }
 
   main {
-    margin: 8vh 10vh;
+    margin: 4vh 4vh;
+    padding: 3vh;
   }
 
   .image-container {
@@ -189,14 +190,29 @@ h4 {
   .background-svg {
     visibility: hidden;
   }
+
+  .image:hover, .image:active {
+    transform: rotate(0deg) scale(1.5);
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+  }
 }
 
 @media (min-width: 670px) and (max-width: 1080px) {
   main {
-    margin: 8vh 10vh;
+    margin: 6vh 8vh;
+    padding: 4vh;
   }
 
   .background-svg {
     visibility: hidden;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 3.7rem;
   }
 }
